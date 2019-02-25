@@ -11,8 +11,8 @@ public void originalFractal(int x, int y, float len){
   if(len < 10){
     ellipse(x, y, len, len);
   } else {
-    fill((int)(Math.random()*80), (int)(Math.random()*80), 255);
+    fill((int)(Math.random()*50), (int)(Math.random()*50), 255);
     ellipse(x , y, len, len);
-    originalFractal(x, y, len-1);
+    originalFractal(x, y, len-10);
   }
 }
